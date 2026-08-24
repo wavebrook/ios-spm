@@ -26,28 +26,28 @@ let package = Package(
     targets: [
         .binaryTarget(
             name: "WavebrookCore",
-            url: "https://resources.wavebrook.com/sdk/ios/WavebrookCore-2.0.0-beta.7.xcframework.zip",
-            checksum: "92522ad0d9031a2198392610de583f6832ee188d6b735a93931438c1598dd132"
+            url: "https://resources.wavebrook.com/sdk/ios/WavebrookCore-2.0.0.xcframework.zip",
+            checksum: "5fb3f508736a1512c3ca384f7dbb3a575c0018bfd61d2206e37c70856384f825"
         ),
         .binaryTarget(
             name: "WavebrookNetSignal",
-            url: "https://resources.wavebrook.com/sdk/ios/WavebrookNetSignal-1.0.0-beta.10.xcframework.zip",
-            checksum: "016c908be68106800d9e490c77902b10c113339b4484ab4540ea1d33de5ef178"
+            url: "https://resources.wavebrook.com/sdk/ios/WavebrookNetSignal-1.0.0.xcframework.zip",
+            checksum: "022fde8ed2ed5a4a81a7927c130d248266f2e471c5d447627cb677595234a171"
         ),
         .binaryTarget(
             name: "WavebrookAdapterCellRebel",
-            url: "https://resources.wavebrook.com/sdk/ios/WavebrookAdapterCellRebel-1.5.1.0-beta.2.xcframework.zip",
-            checksum: "350509dcfcba7037b5ca40739a6f9e82050bf0702a0769410efc7e7c92a19f2e"
+            url: "https://resources.wavebrook.com/sdk/ios/WavebrookAdapterCellRebel-1.5.1.0.xcframework.zip",
+            checksum: "4912a9fc1bd352926fedb60f28ca5341224c96e7ca5cc4383bbe3fd10fc2b824"
         ),
         .binaryTarget(
             name: "WavebrookAdapterIPinfo",
-            url: "https://resources.wavebrook.com/sdk/ios/WavebrookAdapterIPinfo-0.6.0.0-beta.1.xcframework.zip",
-            checksum: "ba62c5200b06904c990c0ce97ab5421403acb2516cce6647aa4402752caf7d49"
+            url: "https://resources.wavebrook.com/sdk/ios/WavebrookAdapterIPinfo-0.6.0.0.xcframework.zip",
+            checksum: "83b81be891ed4266ed541d62877bda5167ef3e8df96f51117b7e06fc43a40436"
         ),
         .binaryTarget(
             name: "WavebrookAdapterRootlake",
-            url: "https://resources.wavebrook.com/sdk/ios/WavebrookAdapterRootlake-1.1.0.1-beta.3.xcframework.zip",
-            checksum: "14d2e31bc571ee262fa51e432cb7d7cfa84ee36ad8fddbd0f57173b3c9c57407"
+            url: "https://resources.wavebrook.com/sdk/ios/WavebrookAdapterRootlake-1.1.0.1.xcframework.zip",
+            checksum: "6aa12188422a22abc3e976602f856f3a08dd72f271c32585c22a998715000539"
         ),
         .binaryTarget(
             name: "IPinfoKit",
