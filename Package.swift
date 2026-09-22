@@ -47,7 +47,7 @@ let package = Package(
         .binaryTarget(
             name: "WavebrookAdapterRootlake",
             url: "https://resources.wavebrook.com/sdk/ios/WavebrookAdapterRootlake-1.1.1.0.xcframework.zip",
-            checksum: "4359c985433710b95da83b88b7ff04e0e093543d62418926f28de8d49c3fa1d4"
+            checksum: "14ce8419dfce74623a477d2023c2d5bacb9ed2eaa4bc931d29e5d3112b240811"
         ),
         .binaryTarget(
             name: "IPinfoKit",
