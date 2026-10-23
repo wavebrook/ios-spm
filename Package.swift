@@ -3,8 +3,8 @@
 // Wavebrook iOS SDK — public binary distribution.
 //
 // Thin manifest over the released XCFrameworks (hosted on Wavebrook infrastructure) plus the
-// partner SDKs they link. Consume `WavebrookCore` alone (iOS 13+) or `WavebrookNetSignal`
-// (iOS 15+ — the curated bundle: core + every adapter + their vendor SDKs, transitively).
+// partner SDKs they link (iOS 15+). Consume `WavebrookCore` alone or `WavebrookNetSignal`
+// (the curated bundle: core + every adapter + their vendor SDKs, transitively).
 //
 // IPinfo publishes SPM-only binaries whose manifest would force this package's floor to iOS 14,
 // so its three frameworks are referenced here as direct binary targets (IPinfo's own release URLs
@@ -14,7 +14,7 @@ import PackageDescription
 let package = Package(
     name: "Wavebrook",
     platforms: [
-        .iOS(.v13)
+        .iOS(.v15)
     ],
     products: [
         .library(name: "WavebrookCore", targets: ["WavebrookCore"]),
@@ -26,13 +26,13 @@ let package = Package(
     targets: [
         .binaryTarget(
             name: "WavebrookCore",
-            url: "https://resources.wavebrook.com/sdk/ios/WavebrookCore-2.0.0.xcframework.zip",
-            checksum: "5fb3f508736a1512c3ca384f7dbb3a575c0018bfd61d2206e37c70856384f825"
+            url: "https://resources.wavebrook.com/sdk/ios/WavebrookCore-2.0.1.xcframework.zip",
+            checksum: "c3ff9ff1403ce010b6661801c5ee1ef829bd339280e2da7769a94d80a607f71a"
         ),
         .binaryTarget(
             name: "WavebrookNetSignal",
-            url: "https://resources.wavebrook.com/sdk/ios/WavebrookNetSignal-1.0.1.xcframework.zip",
-            checksum: "e9340f18e0a7b21133684403b396a8d4a1292ea62251fa9be30a327d92816b4b"
+            url: "https://resources.wavebrook.com/sdk/ios/WavebrookNetSignal-1.0.2.xcframework.zip",
+            checksum: "fca88e2353a50c5e0a28a9e4cb43966f983c005443878d951d79a0bf5fe533ae"
         ),
         .binaryTarget(
             name: "WavebrookAdapterCellRebel",
@@ -41,28 +41,28 @@ let package = Package(
         ),
         .binaryTarget(
             name: "WavebrookAdapterIPinfo",
-            url: "https://resources.wavebrook.com/sdk/ios/WavebrookAdapterIPinfo-0.6.0.0.xcframework.zip",
-            checksum: "83b81be891ed4266ed541d62877bda5167ef3e8df96f51117b7e06fc43a40436"
+            url: "https://resources.wavebrook.com/sdk/ios/WavebrookAdapterIPinfo-0.6.4.0.xcframework.zip",
+            checksum: "f045ef17ddee8a94b627b211f38d8b90e4d644eceafb1ddde95942f42d1ba1c5"
         ),
         .binaryTarget(
             name: "WavebrookAdapterRootlake",
-            url: "https://resources.wavebrook.com/sdk/ios/WavebrookAdapterRootlake-1.1.1.0.xcframework.zip",
-            checksum: "14ce8419dfce74623a477d2023c2d5bacb9ed2eaa4bc931d29e5d3112b240811"
+            url: "https://resources.wavebrook.com/sdk/ios/WavebrookAdapterRootlake-1.1.2.0.xcframework.zip",
+            checksum: "f5a7186bef9782f794340a9348fcebeca029746e03594f04fb792f9f452ac4ad"
         ),
         .binaryTarget(
             name: "IPinfoKit",
-            url: "https://github.com/ipinfo/apple-device-sdk-xcframeworks/releases/download/0.6.0/IPinfoKit.xcframework.zip",
-            checksum: "25bc5e9cede924e870eee4cc0ca9db44f34adef4e7fff9f2e49f46029cbfb551"
+            url: "https://github.com/ipinfo/apple-device-sdk-xcframeworks/releases/download/0.6.4/IPinfoKit.xcframework.zip",
+            checksum: "a31afd8d4e267a9d6eb8c768d3a076890a8d6568049530c37af02330f7ad7306"
         ),
         .binaryTarget(
             name: "HTTPClient",
-            url: "https://github.com/ipinfo/apple-device-sdk-xcframeworks/releases/download/0.6.0/HTTPClient.xcframework.zip",
-            checksum: "f7615b596cb6fa35f9954ab3c083c7a7f290324b47043e242f0c9e18e9bb5671"
+            url: "https://github.com/ipinfo/apple-device-sdk-xcframeworks/releases/download/0.6.4/HTTPClient.xcframework.zip",
+            checksum: "817dc9d9976c6adc87b4eb0976f143022b7c9a687fec35482eefbbbcd54d84df"
         ),
         .binaryTarget(
             name: "Hopscotch",
-            url: "https://github.com/ipinfo/apple-device-sdk-xcframeworks/releases/download/0.6.0/Hopscotch.xcframework.zip",
-            checksum: "bb547dfefad20b1e42d15e45676c16e14533f6b383b3dd671a995bb99b0b071f"
+            url: "https://github.com/ipinfo/apple-device-sdk-xcframeworks/releases/download/0.6.4/Hopscotch.xcframework.zip",
+            checksum: "705204031d772d8156b337e44e2f17c4074492bd323485e2d39c8d4241a5ab75"
         ),
         .target(
             name: "WavebrookNetSignalBundle",
