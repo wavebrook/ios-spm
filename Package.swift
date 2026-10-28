@@ -32,7 +32,7 @@ let package = Package(
         .binaryTarget(
             name: "WavebrookNetSignal",
             url: "https://resources.wavebrook.com/sdk/ios/WavebrookNetSignal-1.0.2.xcframework.zip",
-            checksum: "b48ff74a5480a9e5019cfed50532a3de13ac02b8d0a1a4dbf3a67c35b9ef9029"
+            checksum: "cabdaddbd2494ebb78b9a34fae38ec487213dc02af4833df1ffe3215c5e3528b"
         ),
         .binaryTarget(
             name: "WavebrookAdapterCellRebel",
@@ -41,8 +41,8 @@ let package = Package(
         ),
         .binaryTarget(
             name: "WavebrookAdapterIPinfo",
-            url: "https://resources.wavebrook.com/sdk/ios/WavebrookAdapterIPinfo-0.6.4.0.xcframework.zip",
-            checksum: "f045ef17ddee8a94b627b211f38d8b90e4d644eceafb1ddde95942f42d1ba1c5"
+            url: "https://resources.wavebrook.com/sdk/ios/WavebrookAdapterIPinfo-0.6.4.1.xcframework.zip",
+            checksum: "42224c7577a8691e335903ab171bad6b9d78ad4e7111609af99d01e1275cf8d8"
         ),
         .binaryTarget(
             name: "WavebrookAdapterRootlake",
