@@ -26,13 +26,13 @@ let package = Package(
     targets: [
         .binaryTarget(
             name: "WavebrookCore",
-            url: "https://resources.wavebrook.com/sdk/ios/WavebrookCore-2.0.1.xcframework.zip",
-            checksum: "c3ff9ff1403ce010b6661801c5ee1ef829bd339280e2da7769a94d80a607f71a"
+            url: "https://resources.wavebrook.com/sdk/ios/WavebrookCore-2.0.2.xcframework.zip",
+            checksum: "3d364b825c8dc46ca2369e960d77dfc1e1ce88c5041d31c2b1a105e019f4633f"
         ),
         .binaryTarget(
             name: "WavebrookNetSignal",
             url: "https://resources.wavebrook.com/sdk/ios/WavebrookNetSignal-1.0.2.xcframework.zip",
-            checksum: "fca88e2353a50c5e0a28a9e4cb43966f983c005443878d951d79a0bf5fe533ae"
+            checksum: "37efaed308c0799533e62193bde03356328d8a849007a8b60782d3bdd54f1169"
         ),
         .binaryTarget(
             name: "WavebrookAdapterCellRebel",
